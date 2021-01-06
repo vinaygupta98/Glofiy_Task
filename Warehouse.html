@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/de38109dd2.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="./css/warehouse.css">
+    </head>
+    <body>
+        <nav class="main_nav">
+            <a class="navbar_brand" href="#"><img src="./Images/Group.png" alt="" /></a>
+            <div class="">
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <i style="margin-left: -35px;" class="fas fa-search" aria-hidden="true"></i>
+                </form>
+              
+            <select>
+                <option>...</option>
+            </select>
+                <img class="notification" src="./Images/notification.svg" alt="">
+                <img class="profile_image" src="./Images/6984E81A-914A-4146-BFF7-80342DDFC8CA.png" alt="">
+               
+            </div>
+          </nav>    
+    <div class="wrapper">
+        <div class="left">
+            <ul>
+                <li><i class="fas fa-home"></i>Home</li>
+                <li><i class="fas fa-hand-holding-usd"></i>Order</li>
+                <li><i class="fab fa-product-hunt"></i>Product</li>
+                <li><i class="fas fa-user-friends"></i>Customers</li>
+                <li><i class="fas fa-warehouse"></i>Warehouse</li>
+            </ul>
+        </div>
+        <div class="right">
+            <nav>
+                <div class="product_navbar">
+                    <div>
+                        <h1>Warehouse</h1>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <i style="margin-left: -35px;" class="fas fa-search" aria-hidden="true"></i>
+                    </form>
+                    </div>
+                   <div class="">
+                    <button class="btn">Filter <img src="./Images/noun_filters_220951.png" alt=""> </button>
+                    <button class="btn">Sort <img src="./Images/Group 14.png" alt=""> </button>
+                    <a class="py-2" href="./Add_Warehouse.html">+ Add Werehouse</a>
+                   </div>
+                </div>
+            </nav>
+            <div class="">
+                <table class="table my-4">
+                    <thead class="thead-light">
+                      <tr>
+                        <th scope="col">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                  <div>
+                                    <input type="checkbox" aria-label="Checkbox for following text input">
+                                  </div>
+                                </div>
+                              </div>
+                        </th>
+                        <th scope="col">Warehouse Name</th>
+                        <th scope="col">Phone</th>
+                        <th scope="col">Location</th>
+                        <th scope="col">Warehouse manager</th>
+                        <th scope="col">Station Manager</th>
+                        <th scope="col">Status</th>
+                        <th scope="col">Action</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="col">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                      <div>
+                                        <input type="checkbox" aria-label="Checkbox for following text input">
+                                      </div>
+                                    </div>
+                                  </div>
+                            </th>
+                            <td>KPL Werehouse </td>
+                                <td>9876543210</td>
+                                <td class="d-flex"><div class="mr-2"><p>Bangalore, India</p></div>
+                                    <div class="address_image">
+                                        <div class="address_details">
+                                            #265, 2nd Floor, 6th Main, 4th Cross Rd, Stage 2, BTM Layout, Bengaluru, Karnataka 560076
+                                        </div>
+                                    </div>
+                                    </td>
+                                <td>Arunkumar</td>
+                                <td>Arunkumar</td>
+                                <td><button type="button" class="button active">Active</button></td>
+                                <td>
+                                    <div class="dropdown">
+                                        <button class="btn " type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                          <i class="fas fa-ellipsis-v"></i>
+                                        </button>
+                                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                                          <a class="dropdown-item" href="#">Edit</a>
+                                          <a class="dropdown-item" href="#">Delete</a>
+                                        </div>
+                                      </div>
+                                </td>
+                          </tr>
+                          <tr>
+                            <th scope="col">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                      <div>
+                                        <input type="checkbox" aria-label="Checkbox for following text input">
+                                      </div>
+                                    </div>
+                                  </div>
+                            </th>
+                            <td>KPL Werehouse </td>
+                                <td>9876543210</td>
+                                <td class="d-flex"><div class="mr-2"><p>Bangalore, India</p></div>
+                                    <div class="address_image">
+                                        <div class="address_details">
+                                            #265, 2nd Floor, 6th Main, 4th Cross Rd, Stage 2, BTM Layout, Bengaluru, Karnataka 560076
+                                        </div>
+                                    </div>
+                                    </td>
+                                <td>Arunkumar</td>
+                                <td>Arunkumar</td>
+                                <td><button type="button" class="button pending">Pending</button></td>
+                                <td>
+                                    <div class="dropdown">
+                                        <button class="btn " type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                          <i class="fas fa-ellipsis-v"></i>
+                                        </button>
+                                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                                          <a class="dropdown-item" href="#">Edit</a>
+                                          <a class="dropdown-item" href="#">Delete</a>
+                                        </div>
+                                      </div>
+                                </td>
+                          </tr>  <tr>
+                            <th scope="col">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                      <div>
+                                        <input type="checkbox" aria-label="Checkbox for following text input">
+                                      </div>
+                                    </div>
+                                  </div>
+                            </th>
+                            <td>KPL Werehouse </td>
+                                <td>9876543210</td>
+                                <td class="d-flex"><div class="mr-2"><p>Bangalore, India</p></div>
+                                    <div class="address_image">
+                                        <div class="address_details">
+                                            #265, 2nd Floor, 6th Main, 4th Cross Rd, Stage 2, BTM Layout, Bengaluru, Karnataka 560076
+                                        </div>
+                                    </div>
+                                    </td>
+                                <td>Arunkumar</td>
+                                <td>Arunkumar</td>
+                                <td><button type="button" class="button block">Blocked</button></td>
+                                <td>
+                                    <div class="dropdown">
+                                        <button class="btn " type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                          <i class="fas fa-ellipsis-v"></i>
+                                        </button>
+                                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                                          <a class="dropdown-item" href="#">Edit</a>
+                                          <a class="dropdown-item" href="#">Delete</a>
+                                        </div>
+                                      </div>
+                                </td>
+                          </tr>
+                    
+                    </tbody>
+                  </table>
+                  
+            </div>
+       
+            <footer>
+                <a href="#">&ltPrev</a>
+                <a href="" class="abc">1</a>
+                <a href="" class="abc">2</a>
+                <a href="" class="abc">3</a>
+                <a href="">Next &gt</a>
+            </footer>
+
+        </div>
+    </div>
+    </body>
+    </html>

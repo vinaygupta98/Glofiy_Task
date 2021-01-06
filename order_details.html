@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/de38109dd2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>    
+    <title>Document</title>    
+    <link rel="stylesheet" href="./css/order_details.css">
+</head>
+<body>
+  <nav class="main_nav">
+    <a class="navbar_brand" href="#"><img src="./Images/Group.png" alt="" /></a>
+    <div class="">
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <i style="margin-left: -35px;" class="fas fa-search" aria-hidden="true"></i>
+        </form>
+      
+    <select>
+        <option>...</option>
+    </select>
+        <img class="notification" src="./Images/notification.svg" alt="">
+        <img class="profile_image" src="./Images/6984E81A-914A-4146-BFF7-80342DDFC8CA.png" alt="">
+       
+    </div>
+  </nav>
+    <div class="wrapper">
+    <div class="left">
+        <ul>
+            <li><i class="fas fa-home"></i>Home</li>
+            <li><i class="fas fa-hand-holding-usd"></i>Order</li>
+            <li><i class="fab fa-product-hunt"></i>Product</li>
+            <li><i class="fas fa-user-friends"></i>Customers</li>
+            <li><i class="fas fa-warehouse"></i>Warehouse</li>
+        </ul>
+    </div>
+      <div class="right">
+          <div class="right-top">
+            <div class="order">
+                <p>&lt Order</p>
+                <h1>Order Details</h1>
+                <div class="form-row d-flex align-items-center w-75 justify-content-between mb-4">
+                  
+                <form class="form-inline">
+                  <input class="form-control" style="width: 338px;" type="search" placeholder="Browse a product" aria-label="Search">
+                  <i style="margin-left: -35px;" class="fas fa-search" aria-hidden="true"></i>
+                </form>                
+                <button type="button" class="btn btn-dark-color" data-toggle="modal" data-target="#add_product">
+                  Create a Custom Product
+                </button>
+                <div class="modal fade" id="add_product" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="form-row">
+                          <div class="form-group col-md-4">
+                            <label for="">Product Name</label>
+                            <input type="text" class="form-control" id="">
+                          </div>
+                          <div class="form-group col-md-4">
+                            <label for="">Price per item</label>
+                            <input type="text" class="form-control" id="">
+                          </div>
+                          <div class="form-group col-md-4">
+                            <label for="">Qty</label>
+                            <select id="" class="form-control">
+                              <option selected>1</option>
+                              <option>2</option>
+                            </select>
+                            
+                          </div>
+                        </div>
+                
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn" data-dismiss="modal">Cancel</button>
+                        <button type="button" class="btn">Create</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                </div>
+                <table class="table">
+                  <thead class="thead-light">
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">SKU</th>
+                      <th scope="col">Name</th>
+                      <th scope="col">Price</th>
+                      <th scope="col">Qty</th>
+                      <th scope="col">Discount</th>
+                      <th scope="col">Total</th>
+                      <th scope="col"> </th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row"><img class="profile_image" src="./Images/9E7876E4-C384-45B4-BA56-00E57B37D369.png" alt=""></th>
+                      <td> <a href="">#2000312 </a> </td>
+                      <td>Puma Sport Shoe White </td>
+                      <td>Rs 799</td>
+                      <td class="d-flex"> x1 <button>+</button> <button>-</button></td>
+                      <td>5 %</td>
+                      <td>Rs 759</td>
+                      <td>
+                        <button type="button" class="btn" data-toggle="modal" data-target="#delete">X</button>
+                        <div class="modal fade" id="delete" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h1 style="font-size:20px" class="modal-title" id="exampleModalLongTitle">Are You Sure You want to This Item</h1>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                <p>Do you really want to remove this item from order list</p>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn" data-dismiss="modal">Cancel</button>
+                                <button type="button" class="btn">Remove</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        
+
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row"><img class="profile_image" src="./Images/9E7876E4-C384-45B4-BA56-00E57B37D369.png" alt=""></th>
+                      <td> <a href="">#2000312 </a> </td>
+                      <td>Netgear R6700 Nighthawk AC 750 Dual Band Smart </td>
+                      <td>Rs 799</td>
+                      <td class="d-flex"> x1 <button>+</button> <button>-</button></td>
+                      <td>5 %</td>
+                      <td>Rs 759</td>
+                      <td>
+                        <button type="button" class="btn" data-toggle="modal" data-target="#delete">X</button>
+                        <div class="modal fade" id="delete" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h1 style="font-size:20px" class="modal-title" id="exampleModalLongTitle">Are You Sure You want to This Item</h1>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                <p>Do you really want to remove this item from order list</p>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn" data-dismiss="modal">Cancel</button>
+                                <button type="button" class="btn">Remove</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>   
+                    <tr>
+                      <th scope="row"><img class="profile_image" src="./Images/9E7876E4-C384-45B4-BA56-00E57B37D369.png" alt=""></th>
+                      <td> <a href="">#2000312 </a> </td>
+                      <td>HTC VIVE Virtual Reality System</td>
+                      <td>Rs 799</td>
+                      <td class="d-flex"> x1 <button>+</button> <button>-</button></td>
+                      <td>5 %</td>
+                      <td>Rs 759</td>                      
+                      <td>
+                        <button type="button" class="btn" data-toggle="modal" data-target="#delete">X</button>
+                        <div class="modal fade" id="delete" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h1 style="font-size:20px" class="modal-title" id="exampleModalLongTitle">Are You Sure You want to This Item</h1>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                  <span aria-hidden="true">&times;</span>
+                                </button>
+                              </div>
+                              <div class="modal-body">
+                                <p>Do you really want to remove this item from order list</p>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn" data-dismiss="modal">Cancel</button>
+                                <button type="button" class="btn">Remove</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        
+
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <div class="d-flex justify-content-end">
+                <div class="container mb-5" style="margin-right: 0;max-width: 300px;">
+                  <div class="row">
+                    <div class="col">Subtotal</div>
+                    <div class="col price">Rs 10,999</div>
+                  </div>
+                  <div class="row">
+                    <div class="col">Shipping</div>
+                    <div class="col price">Rs 759</div>
+                  </div>
+                  <div class="row">
+                    <div class="col">Subtotal</div>
+                    <div class="col price">Rs 1,110</div>
+                  </div>
+                  <div class="row">
+                    <div class="col">Tax</div>
+                    <div class="col price">-</div>
+                  </div>
+                  <div class="row">
+                    <div class="col">Total</div>
+                    <div class="col price">Rs 12,868</div>
+                  </div>
+                  </div>
+                </div>
+                
+            </div>
+            <div class="customer">\
+              <div class="d-flex justify-content-between">
+              <h1>Customer</h1>
+              <a href="#">edit</a>
+            </div>
+              <div class="d-flex mb-4">
+                <img class="profile_image mr-3" src="./Images/6984E81A-914A-4146-BFF7-80342DDFC8CA.png" alt="">
+                <div class="w-25">
+                <p>Arunkumarx</p>
+                <p>arun@gloify.com</p>
+              </div>
+              </div>
+
+            <div class="mb-3">
+              <div class="d-flex justify-content-between">
+                <h1>Shiping Address</h1>              
+                <a href="#">edit</a>
+              </div>
+              <p>#265, 2nd Floor, 6th Main, 4th Cross Rd, Stage 2, BTM Layout,  Bengaluru, Karnataka 560076</p>  
+            </div>
+              <div class="mb-3">
+                <h1>Taxs</h1>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                <label class="form-check-label" for="inlineCheckbox1">Apply Taxs</label>
+              </div>
+              </div>
+              <div class="mb-3">
+                <h1>Shipping Charge</h1>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                <label class="form-check-label" for="inlineRadio1">Free Shipping</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                <label class="form-check-label" for="inlineRadio1">Shipping Charge</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+              </div>
+              </div>
+
+              <h1>Discount</h1>
+              <div class="input-group mb-3">
+            
+                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                <div class="input-group-append">
+                  <span class="input-group-text">%</span>
+                </div>
+               <div class="input-group-append">
+                  <span class="input-group-text">Rs</span>
+                </div>
+              </div>
+              
+              
+            </div>
+          
+       
+        </div>
+        <footer class="w-100 d-flex justify-content-end">
+          <button type="button" class="btn btn-secondary mr-2">Cancel</button>
+          <button type="button" class="btn btn-primary">Create Order</button>            
+      </footer>
+      </div>
+      </div>    
+        
+</body>
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/de38109dd2.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="./css/add_warehouse.css">
+        <link rel="stylesheet" href="./css/discount_code.css">
+        <script src="./app.js"></script>
+    </head>
+    <body>
+        <nav class="main_nav">
+            <a class="navbar_brand" href="#"><img src="./Images/Group.png" alt="" /></a>
+            <div class="">
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <i style="margin-left: -35px;" class="fas fa-search" aria-hidden="true"></i>
+                </form>
+              
+            <select>
+                <option>...</option>
+            </select>
+                <img class="notification" src="./Images/notification.svg" alt="">
+                <img class="profile_image" src="./Images/6984E81A-914A-4146-BFF7-80342DDFC8CA.png" alt="">
+               
+            </div>
+          </nav>    
+    <div class="wrapper">
+        <div class="left">
+            <ul>
+                <li><i class="fas fa-home"></i>Home</li>
+                <li><i class="fas fa-hand-holding-usd"></i>Order</li>
+                <li><i class="fab fa-product-hunt"></i>Product</li>
+                <li><i class="fas fa-user-friends"></i>Customers</li>
+                <li><i class="fas fa-warehouse"></i>Warehouse</li>
+                <li><i class="fas fa-user-tie"></i>Employee</li>
+                <li><i class="fas fa-tag"></i>Discounts</li>
+            </ul>
+        </div>
+        <div class="right">
+            <div class="right_">
+                <div class="right_inside">
+                    <p>&lt Discounts</p>
+                    <h1>Automatic Discounts</h1>
+                    <form>
+                        <div class="form-group">
+                          <label for="">Enter Discount Title</label>
+                          <input type="text" class="form-control" id="" placeholder="">
+                        </div>
+        
+                        <h1>Types</h1>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="radio1" name="type" onchange="change1()" class="custom-control-input">
+                            <label class="custom-control-label" for="radio1">Percentage</label>
+                          </div>
+                          <div class="custom-control custom-radio">
+                            <input type="radio" id="radio2" name="type" onchange="change_fiexd()" class="custom-control-input">
+                            <label class="custom-control-label" for="radio2">Fixed Amount</label>
+                          </div>
+                          <div class="custom-control custom-radio">
+                            <input type="radio" id="radio3" onchange="change2()" name="type" class="custom-control-input">
+                            <label class="custom-control-label" for="radio3">Buy X Get Y</label>
+                          </div>
+                          <div class="__value">
+                          <h1>Value</h1>
+                              <div class="form-group">
+                                <label for="">Enter Discount value</label>
+                                <input type="number" class="form-control" id="" placeholder="">
+                              </div>
+                            </div>
+                            <div class="buy_x_get_y">
+                          <h1>Buy X Get Y for</h1>
+                          <div class="custom-control custom-radio">
+                            <input type="radio" id="abc" name="xandy" class="custom-control-input">
+                            <label class="custom-control-label" for="abc">Minimum quantity of items</label>
+                          </div>
+                          <div class="custom-control custom-radio">
+                            <input type="radio" id="abc" name="xandy" class="custom-control-input">
+                            <label class="custom-control-label" for="abc">Minimum purchase amount</label>
+                          </div>
+                          <div class="form-row">
+                            <div class="form-group col-md-3 ml-5">
+                              <label for="">Select Amount</label>
+                              <input type="text" class="form-control" id="" placeholder="">
+                            </div>
+                            <div class="form-group col-md-6">
+                              <label for="">Select Product</label>
+                              <input type="text" class="form-control" id="" placeholder="">
+                            </div>
+                          </div>
+                          <div class="user">
+                          <img class="images" src="./Images/6984E81A-914A-4146-BFF7-80342DDFC8CA.png" alt="">
+                          <div class="profile_text">
+                            <p>Puma Sport Shoe White </p>
+                            <p>(3 Varient 3 colour)</p>
+                          </div>
+                            </div>
+                          <h1>Get Y</h1>
+                          <div class="form-row">
+                            <div class="form-group col-md-3 ml-5">
+                              <label for="">Select Amount</label>
+                              <input type="text" class="form-control" id="" placeholder="">
+                            </div>
+                            <div class="form-group col-md-6">
+                              <label for="">Select Product</label>
+                              <input type="text" class="form-control" id="" placeholder="">
+                            </div>
+                          </div>
+                          <div class="user">
+                            <img class="images" src="./Images/6984E81A-914A-4146-BFF7-80342DDFC8CA.png" alt="">
+                            <div class="profile_text">
+                              <p>Puma Sport Shoe White </p>
+                              <p>(3 Varient 3 colour)</p>
+                            </div>
+                              </div>
+                              <div id="discount_per_amo">
+                                <h1>Discount</h1>
+                                <div class="custom-control custom-radio">
+                                  <input type="radio" id="discount1" name="discount" onchange="change3()" class="custom-control-input">
+                                  <label class="custom-control-label" for="discount1">Percentage</label>
+                                </div>
+                                <div class="custom-control custom-radio">
+                                  <input type="radio" id="discount2"  onchange="change4()"  name="discount" class="custom-control-input">
+                                  <label class="custom-control-label" for="discount2">Free</label>
+                                </div>                        
+                                <div class="specific_product ">
+                                  <div class="form-group mb-3">
+                                    <label for="">Enter Percentage Value</label>
+                                    <input type="text" class="form-control" id="" placeholder="">
+                                      </div>
+                                    </div>
+                              </div>
+                          </div>
+                          <div class="fixed_applied">
+                            <h1>Applied For</h1>
+                            <div class="custom-control custom-radio">
+                              <input type="radio" id="discount1" name="discount" onchange="change3()" class="custom-control-input">
+                              <label class="custom-control-label" for="discount1">All products</label>
+                            </div>
+                            <div class="custom-control custom-radio">
+                              <input type="radio" id="discount2"  onchange="change4()"  name="discount" class="custom-control-input">
+                              <label class="custom-control-label" for="discount2">Specific products</label>
+                            </div>
+                          </div>
+                          <div class="minimum_requirement">
+                          <h1 id="minimum">Applied For</h1>
+                          <div class="custom-control custom-radio">
+                            <input type="radio" id="discount1" name="discount" onchange="change3()" class="custom-control-input">
+                            <label class="custom-control-label" for="discount1">Minimum purchase amount (₹)</label>
+                          </div>
+                          <div class="custom-control custom-radio">
+                            <input type="radio" id="discount2"  onchange="change4()"  name="discount" class="custom-control-input">
+                            <label class="custom-control-label" for="discount2">Minimum quantity of items</label>
+                          </div>
+                          <div class="specific_product ">
+                          <div class="form-group mb-3">
+                            <label for="">Enter Quantity</label>
+                            <input type="text" class="form-control" id="" placeholder="">
+                              </div>
+                            </div>
+                          </div>
+                          <h1>Coupon Active dates</h1>
+                          <div class="form-row">
+                          <div class="form-group col-md">
+                            <label for="">Enter Start Date</label>
+                            <select id="" class="form-control">
+                              <option selected></option>
+                              <option>...</option>
+                            </select>
+                          </div><div class="form-group col-md">
+                            <label for="">Enter Start Time</label>
+                            <select id="" class="form-control">
+                              <option selected></option>
+                              <option>...</option>
+                            </select>
+                        </div>
+                          </div>
+                          <div class="form-row">
+                            <div class="form-group col-md">
+                              <label for="inputState">Enter End Date</label>
+                              <select id="inputState" class="form-control">
+                                <option selected></option>
+                                <option>...</option>
+                              </select>
+                            </div><div class="form-group col-md">
+                              <label for="inputState">Enter End Time</label>
+                              <select id="inputState" class="form-control">
+                                <option selected></option>
+                                <option>...</option>
+                              </select>
+                          </div>
+                            </div>
+                        </form>
+                </div>
+            </div>
+
+            <footer class="w-100 d-flex justify-content-end p-3">
+                <button type="button" class="button-secondary">Cancel</button>
+                <button type="button" class="button-primary">Add Warehouse</button>            
+            </footer>
+        </div>
+    </div>
+    </body>
+    </html>

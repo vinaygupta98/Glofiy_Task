@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-shadow: none !important;
+}
+body{
+    font-family: 'Source Sans Pro', sans-serif !important;
+
+}
+.main_nav{
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+    margin: 0 40px;
+}
+.main_nav div{
+    display: flex;
+    justify-content: space-evenly;
+    width: 30%;
+}
+.product_navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+
+}.product_navbar div{    
+    display: flex;
+    justify-content: space-evenly;
+    width: 30%;
+}
+.wrapper{
+    display: flex;
+    background: #EEF1F8;
+}
+.left{
+    width: 220px;
+    background: #ffffff;
+    margin-top: 5px;
+}
+.left ul li{
+    list-style: none;
+    padding: 20px;
+    margin: 5px;
+}
+.left ul li > i{
+    padding: 5px 10px;
+}
+.left ul li:hover{
+    background: #F7F7F7;
+    color: #E73955;
+}
+.right{
+    width: 100%;
+    background: #FFFFFF;
+    margin: 25px;
+    padding: 20px;
+}
+footer{
+    float: right;
+}
+footer a{
+    color: #000000;
+    text-decoration: none;
+    border-radius: 2px;
+    width: 36px;
+    height: 36px;
+    padding: 10px;
+}
+footer a:hover{
+    text-decoration: none;
+    background-color: #EEEEEE;
+}
+.product_navbar a{
+    text-decoration: none;
+}
+.product_name{
+    display: flex;
+    width: 230px;
+    justify-content: space-evenly;
+}
+table{
+    font-size: 13px;
+}
+.profile_image {
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+}
+.notification {
+    width: 20px;
+    height: 30px;
+}
+h1{
+    font-size: 20px;
+    font-weight: 800;
+}
+.product_navbar{
+    margin: 0;
+    padding: 0;
+}
+.right{
+    background:#EEF1F8;
+  border-radius: 5px;
+  padding: 0;
+}
+.right_last{
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    width: 370px;
+    height: 435px;
+    padding: 20px;
+  
+}
+label{
+    font-size: 14px;
+}
+.abc{
+    display: flex;
+}
+.right_1{
+    width: 100%;
+    background: #FFFFFF;
+    padding: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+footer{
+    background: #ffffff;
+    padding: 25px 30px;
+}

@@ -1,0 +1,30 @@
+.buy_x_get_y{
+    display: none;
+  }
+  .__value{
+    display: none;
+  }
+  .specific_product{
+    display: none;
+  }
+  .fixed_applied{
+    display: none;
+  }  
+.images{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 30px;
+  margin-left: 50px;
+}
+.user{
+  display: flex;
+
+}
+p{
+  margin-bottom: 0;
+}
+.profile_text{
+  display: flex;
+  flex-direction: column;
+}

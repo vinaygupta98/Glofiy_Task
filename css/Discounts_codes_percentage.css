@@ -1,0 +1,32 @@
+
+.images{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 30px;
+    margin-left: 50px;
+  }
+  .user{
+    display: flex;
+  
+  }
+  p{
+    margin-bottom: 0;
+  }
+  .buy_x_get_y{
+      display: none;
+  }
+  .broswse{
+      display: none;
+  }
+  .profile_text{
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+  }
+  .country{
+      display: none;
+  }
+  .quantity{
+      display: none;
+  }

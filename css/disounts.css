@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-shadow: none !important;
+}
+body{
+    font-family: 'Source Sans Pro', sans-serif !important;
+
+}
+.main_nav{
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+    margin: 0 40px;
+}
+.main_nav div{
+    display: flex;
+    justify-content: space-evenly;
+    width: 30%;
+}
+.product_navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+
+}.product_navbar div{    
+    display: flex;
+    justify-content: space-evenly;
+    width: 30%;
+}
+.wrapper{
+    display: flex;    
+    background: #EEF1F8;
+}
+.left{
+    width: 280px;
+    background: #ffffff;
+    margin-top: 5px;
+}
+.left ul li{
+    list-style: none;
+    padding: 20px;
+    margin: 5px;
+}
+.left ul li > i{
+    padding: 5px 10px;
+}
+.left ul li:hover{
+    background: #F7F7F7;
+    color: #E73955;
+}
+.right{
+    width: 100%;
+    background: #FFFFFF;
+    margin: 25px;
+    align-items: center;
+    height: 70vh;
+    display: flex;
+}
+.right > *{
+    flex-basis: 100%;
+    text-align: center;
+}
+
+.profile_image {
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+}
+.notification {
+    width: 20px;
+    height: 30px;
+}
+h1{
+    font-size: 20px;
+    font-weight: 800;
+}
+.right_left, .right_right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.right_left{
+    border-right: 1px dashed black;
+}
+.button-special{
+    background-color: #319BF5;
+    border-radius: 3px;
+    color: #ffffff;
+    border: none;
+    font-size: 18px;
+    letter-spacing: -0.1px;
+    line-height: 30px;
+    padding: 10px 30px;
+}
+.discount_image{
+        background-color: #319BF5;
+        width: 80px;
+        height: 80px;       
+}
+.discount_details{
+    color: #000000;
+    font-size: 16px;
+    letter-spacing: -0.08px;
+    line-height: 26px;
+    opacity: 0.6000000238418579;
+    width: 400px;
+    text-align: center;
+}

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/de38109dd2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>    
+    <title>Document</title>    <link rel="stylesheet" href="./css/add_prouct_style.css">
+</head>
+<body>
+  <nav class="main_nav">
+    <a class="navbar_brand" href="#"><img src="./Images/Group.png" alt="" /></a>
+    <div class="">
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <i style="margin-left: -35px;" class="fas fa-search" aria-hidden="true"></i>
+        </form>
+      
+    <select>
+        <option>...</option>
+    </select>
+        <img class="notification" src="./Images/notification.svg" alt="">
+        <img class="profile_image" src="./Images/6984E81A-914A-4146-BFF7-80342DDFC8CA.png" alt="">
+       
+    </div>
+  </nav>
+    <div class="wrapper">
+    <div class="left">
+        <ul>
+            <li><i class="fas fa-home"></i>Home</li>
+            <li><i class="fas fa-hand-holding-usd"></i>Order</li>
+            <li><i class="fab fa-product-hunt"></i>Product</li>
+            <li><i class="fas fa-user-friends"></i>Customers</li>
+            <li><i class="fas fa-warehouse"></i>Warehouse</li>
+        </ul>
+    </div>
+    <div class="">
+      <div class="right">
+          <div class="right-top">
+            <div class="product">
+                <p>&lt Product</p>
+                <h1>Add Product</h1>
+                <div class="form-group">
+                    <label for="">First Name</label>
+                    <input type="text" class="form-control">
+                  </div>
+                <div class="form-group">
+                    <label for="">Description</label>
+                    <input type="text" class="form-control" id="" placeholder="">
+                  </div>
+                
+            </div>
+            <div class="right-bottom">
+                <h1 >Add Product</h1>
+                <input type="image" src="./images/Uploaded" alt="">
+                <img style="width: 323px;height: 224px;" src="./Images/916B7BBE-9A10-4340-BD73-F257DBF1C59A.png" alt="">
+            </div>            
+            <div class="right-bottom">
+                    <h1>Inventory</h1>
+                <div class="form-group">
+                    <label for="">SKU (Stock Keeping Unit)</label>
+                    <input type="text" class="form-control">
+                  </div>
+                <div class="form-group">
+                    <label for="">Barcode (ISBN, UPC, GTIN, etc.)</label>
+                    <input type="text" class="form-control" id="" placeholder="">
+                  </div>
+            </div>
+            <div class="right-bottom">
+                    <div class="d-flex justify-content-between">
+                      <h1>Variants</h1>
+                    <div class="form-group">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" value="" id="" required>
+                          <label class="form-check-label" for="">
+                            This product have multible variants
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form mb-5">
+                      <div class="form-row mb-3">
+                        <div class="form-group col-md-4">                          
+                           <label for="">Option 1</label>
+                          <select id="" class="form-control">
+                            <option selected>Size</option>
+                            <option >Color</option>
+                            <option >Material</option>
+                          </select>
+                        </div>
+                        <div class="col">                       
+                          <label style="float: right; width: 20px;" for=""> <img src="./Images/trash-solid.svg" alt=""> </label>
+                          <input style="height: 80px;" type="text" class="form-control" placeholder="">
+                        </div>
+                      </div>
+                      <div class="form-row">
+                      <div class="form-group col-md-4">
+                        <select id="inputState" class="form-control">
+                          <option selected>Color</option>
+                        </select>
+                      </div>
+                      <div class="col">
+                        <input type="text" class="form-control" placeholder="seprate option with a comma">
+                      </div>
+                    </div>
+                    <a style="float: right;" href="#">+Add another option</a>
+                    </div>
+                     <div>
+                        <h1>Variants Details</h1>
+                        <table class="table">
+                          <thead class="thead-light">
+                            <tr >
+                              <th scope="col" >Variants</th>
+                              <th scope="col" >Price</th>
+                              <th scope="col" >Vendor</th>
+                              <th scope="col"  >Quantity</th>
+                              <th scope="col" >SKU</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td scope="row"> 
+                                <img class="profile_image" src="./Images/6984E81A-914A-4146-BFF7-80342DDFC8CA.png" alt=""> 44</td>
+                              <td><input type="password" class="form-control" id="exampleInputPassword1" placeholder=""></td>
+                              <td><input type="password" class="form-control" id="exampleInputPassword1" placeholder=""></td>
+                              <td><select class="form-control ">
+                                  <option></option>
+                                </select></td>
+                              <td><input type="password" class="form-control" id="exampleInputPassword1" placeholder=""></td>
+                            </tr> 
+                             <tr>
+                              <td scope="row"> 
+                                <img class="profile_image" src="./Images/6984E81A-914A-4146-BFF7-80342DDFC8CA.png" alt=""> 44</td>
+                              <td><input type="password" class="form-control" id="exampleInputPassword1" placeholder=""></td>
+                              <td><input type="password" class="form-control" id="exampleInputPassword1" placeholder=""></td>
+                              <td><select class="form-control ">
+                                  <option></option>
+                                </select></td>
+                              <td><input type="password" class="form-control" id="exampleInputPassword1" placeholder=""></td>
+                            </tr> 
+                            <tr>
+                              <td scope="row"> 
+                                <img class="profile_image" src="./Images/6984E81A-914A-4146-BFF7-80342DDFC8CA.png" alt=""> 44</td>
+                              <td><input type="password" class="form-control" id="exampleInputPassword1" placeholder=""></td>
+                              <td><input type="password" class="form-control" id="exampleInputPassword1" placeholder=""></td>
+                              <td><select class="form-control ">
+                                  <option></option>
+                                </select></td>
+                              <td><input type="password" class="form-control" id="exampleInputPassword1" placeholder=""></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                     </div>
+            </div>
+          </div>
+          <div class="right-right">
+            <form>
+                <h1>Quanity</h1>
+                <div class="form-group">
+                    <label for="avilable">Available</label>
+                    <div class="input-group">
+                      <input type="text" class="form-control" aria-label="Text input with dropdown button">
+                      <div class="input-group-append">
+                        <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Qty</button>
+                        <div class="dropdown-menu">
+                          <a class="dropdown-item" href="#">KG</a>
+                          <a class="dropdown-item" href="#">Qty</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                <h1>Pricing</h1>
+                <div class="form-group">
+                  <label for="">Price</label>
+                  <input type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label for="">Cost per item</label>
+                  <input type="text" class="form-control">
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Charge Tax on this product</label>
+                </div>
+                <h1>Product Details</h1>
+                <div class="form-group">
+                    <label for="inputState">Product type</label>
+                    <select id="inputState" class="form-control">
+                      <option selected>Redmi note 9 pro </option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="inputState">Vender</label>
+                    <select id="inputState" class="form-control">
+                      <option selected>Nike</option>
+                    </select>
+                  </div>
+                  <h1>Tags</h1>
+                <div class="form-group">
+                    <label for="">Type tags</label>
+                    <input type="text" class="form-control">
+                  </div>
+              </form>
+                </div>
+          </div>
+          <footer class="w-100 d-flex justify-content-end">
+            <button type="button" class="btn btn-primary mr-2">Cancel</button>
+            <button type="button" class="btn btn-secondary">Add Product</button>            
+        </footer>
+       
+       
+        </div>
+      
+    </div>
+        </div>
+  
+    </div>
+        
+</body>
+</html>

@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-shadow: none !important;
+}
+body{
+    font-family: 'Source Sans Pro', sans-serif !important;
+
+}
+.main_nav{
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+    margin: 0 40px;
+}
+.main_nav div{
+    display: flex;
+    justify-content: space-evenly;
+    width: 30%;
+}
+.product_navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+
+}.product_navbar div{    
+    display: flex;
+    justify-content: space-evenly;
+    width: 30%;
+}
+.wrapper{
+    display: flex;    
+    background: #EEF1F8;
+}
+.left{
+    width: 220px;
+    background: #ffffff;
+    margin-top: 5px;
+}
+.left ul li{
+    list-style: none;
+    padding: 20px;
+    margin: 5px;
+}
+.left ul li > i{
+    padding: 5px 10px;
+}
+.left ul li:hover{
+    background: #F7F7F7;
+    color: #E73955;
+}
+.right{
+    width: 100%;
+    background: #FFFFFF;
+    margin: 25px;
+    padding: 20px;
+}
+footer{
+    float: right;
+}
+footer a{
+    color: #000000;
+    text-decoration: none;
+    border-radius: 2px;
+    width: 36px;
+    height: 36px;
+    padding: 10px;
+}
+footer a:hover{
+    text-decoration: none;
+    background-color: #EEEEEE;
+}
+.product_navbar a{
+    text-decoration: none;
+}
+.product_name{
+    display: flex;
+    width: 230px;
+    justify-content: space-evenly;
+}
+table{
+    font-size: 13px;
+}
+.profile_image {
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+}
+.notification {
+    width: 20px;
+    height: 30px;
+}
+h1{
+    font-size: 20px;
+    font-weight: 800;
+}
+.product_navbar{
+    margin: 0;
+    padding: 0;
+}
+.address_image{
+    margin-top: 5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: black;
+}
+.address_details{
+    visibility: hidden;
+    position: relative;
+    top: 25px;
+    left: -25px;
+    width: 250px;
+    height: 25px;
+    background: #FFFFFF;
+    z-index: 2;
+}
+.address_image:hover .address_details{
+ 
+    visibility: visible;
+}
+.button{
+    border-radius: 4px;
+    width: 70px;
+    height: 28px;  
+    color: #ffffff;
+    border: none;
+    font-weight: 600;
+}
+.active{
+    background: #2ED8B6; 
+}
+.pending{
+    background: #4B69FF;
+}
+.block{
+    background: #FF3653;
+}
